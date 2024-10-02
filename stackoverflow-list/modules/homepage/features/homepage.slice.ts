@@ -100,7 +100,7 @@ export const HomePageSlice = createSlice({
       })
        // Questions
       .addCase(getQuestions.pending, (state) => {
-        state.questions.loading = true;
+        // state.questions.loading = true;
       })
       .addCase(getQuestions.fulfilled, (state, action) => {
         let updatedQuestions = state.questions.data.concat(action.payload?.data?.items);
